@@ -115,10 +115,10 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
           className="py-3 px-4 bg-gradient-to-r from-pink-100 via-yellow-100 to-pink-100 rounded-2xl border border-pink-200"
         >
           <p className="text-xl sm:text-2xl font-bold text-pink-700 font-display flex items-center justify-center gap-2">
-            🎉 Today is the Big Day! 🎂
+            Today is the Big Day!
           </p>
           <p className="text-sm font-medium text-purple-700 mt-1">
-            Happy {turningAge}th Birthday, sweet {nickname}! Let the party begin! ✨
+            Happy {turningAge}th Birthday, sweet {nickname}! Let the party begin!
           </p>
         </div>
       ) : timeLeft.isPast ? (
@@ -127,7 +127,7 @@ export const CountdownTimer: React.FC<CountdownTimerProps> = ({
           className="py-3 px-4 bg-gradient-to-r from-purple-100 via-pink-100 to-amber-100 rounded-2xl border border-purple-200"
         >
           <p className="text-lg sm:text-xl font-bold text-purple-800 font-display flex items-center justify-center gap-2">
-            🎈 Happy {turningAge}th Birthday, {nickname}! 💖
+            Happy {turningAge}th Birthday, {nickname}!
           </p>
           <p className="text-xs sm:text-sm text-slate-600 mt-1">
             Celebrating {nickname}&apos;s wonderful memories and magical {turningAge}th year!

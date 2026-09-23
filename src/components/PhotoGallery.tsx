@@ -68,7 +68,7 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = ({ photos, nickname }) 
                     <div className="flex flex-col items-center">
                       <SmilingStar size={36} color="#FDE047" className="animate-twinkle" />
                       <span className="text-[10px] font-bold text-amber-700 mt-2 font-display bg-amber-100 px-2 py-0.5 rounded-full">
-                        8 Years of Magic ✨
+                        7 Years of Magic
                       </span>
                     </div>
                   )}

@@ -24,7 +24,7 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ config }) => {
   const handleAddToCalendar = () => {
     // Generate Google Calendar Link
     // Format: 20261004T160000 / 20261004T200000
-    const title = encodeURIComponent(`${config.nickname}'s ${config.turningAge}th Birthday Celebration! 🎂`);
+    const title = encodeURIComponent(`${config.nickname}'s ${config.turningAge}th Birthday Celebration!`);
     const details = encodeURIComponent(
       `Celebrating ${config.childName} (${config.nickname}) turning ${config.turningAge} years old! ${config.invitationHeadline} Google Maps: ${googleMapsLink}`
     );
@@ -79,14 +79,14 @@ export const EventDetails: React.FC<EventDetailsProps> = ({ config }) => {
         >
           <div className="w-12 h-12 rounded-xl bg-purple-500 text-white flex flex-col items-center justify-center shrink-0 shadow-sm">
             <Cake className="w-5 h-5 mb-0.5" />
-            <span className="text-[9px] font-bold uppercase tracking-wider">8 YEARS</span>
+            <span className="text-[9px] font-bold uppercase tracking-wider">{config.turningAge} YEARS</span>
           </div>
           <div>
             <span className="text-[11px] font-semibold text-purple-600 uppercase tracking-wide">
               Celebration
             </span>
             <h4 className="text-sm sm:text-base font-bold text-slate-800 font-display leading-snug">
-              Join Us in Celebrating Her 8th Birthday!
+              Join Us in Celebrating Her {config.turningAge}th Birthday!
             </h4>
             <p className="text-xs text-slate-500 mt-0.5">Happy Birthday Kotha!</p>
           </div>

@@ -81,7 +81,7 @@ export const EnvelopeModal: React.FC<EnvelopeModalProps> = ({
             {isOpened && (
               <div className="absolute -top-8 w-40 bg-white rounded-xl p-2.5 shadow-md border border-pink-200 text-center animate-float-slow">
                 <span className="text-xs font-bold text-purple-700 font-display">
-                  🎉 Welcome to Kotha&apos;s Party!
+                  Welcome to Kotha&apos;s Party!
                 </span>
               </div>
             )}

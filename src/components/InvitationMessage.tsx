@@ -50,7 +50,7 @@ export const InvitationMessage: React.FC<InvitationMessageProps> = ({ config }) 
           <div className="text-left">
             <p className="text-xs text-slate-500 font-medium">With lots of love & hugs,</p>
             <p className="text-sm font-bold text-slate-800 font-display">
-              {config.childName} & Family 💕
+              {config.childName} & Family
             </p>
           </div>
         </div>

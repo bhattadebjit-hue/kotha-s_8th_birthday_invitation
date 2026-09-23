@@ -10,18 +10,23 @@ import { EnvelopeModal } from './components/EnvelopeModal.tsx';
 import { FluffyCloud, BalloonsCluster, SmilingStar, CuteBunny, CuteTeddyBear } from './components/CuteIllustrations.tsx';
 import { Heart, ArrowLeft, Mail } from 'lucide-react';
 import { triggerConfetti } from './utils/confetti.ts';
+import { birthdayAudio } from './utils/audioSynthesizer.ts';
 
 export default function App() {
   const [isInvitationOpen, setIsInvitationOpen] = useState<boolean>(false);
   const [isEnvelopeOpen, setIsEnvelopeOpen] = useState<boolean>(false);
 
   const handleOpenInvitation = () => {
+    // Automatically turn ON happy birthday music when opening the invitation
+    birthdayAudio.play();
     triggerConfetti(0.6);
     setIsInvitationOpen(true);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleBackToCover = () => {
+    // Automatically turn OFF music when closing/returning to cover
+    birthdayAudio.stop();
     setIsInvitationOpen(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -77,7 +82,7 @@ export default function App() {
             </button>
 
             <span className="text-xs font-extrabold text-slate-700 font-display">
-              {INVITATION_DATA.nickname}&apos;s 8th Birthday 🎉
+              {INVITATION_DATA.nickname}&apos;s {INVITATION_DATA.turningAge}th Birthday
             </span>
 
             <button
@@ -109,12 +114,12 @@ export default function App() {
             <InvitationMessage config={INVITATION_DATA} />
           </section>
 
-          {/* 3. EVENT DETAILS (Cards for Birthday, 4th Oct, Age 8, [Venue Name], [Time], [Full Address]) */}
+          {/* 3. EVENT DETAILS (Cards for Birthday, 4th Oct, Age 7, [Venue Name], [Time], [Full Address]) */}
           <section id="details-section" className="px-4 py-4 scroll-mt-16">
             <EventDetails config={INVITATION_DATA} />
           </section>
 
-          {/* 4. MAKE A WISH (Interactive 8-candle cake & blessings) */}
+          {/* 4. MAKE A WISH (Interactive 7-candle cake & blessings) */}
           <section id="wish-section" className="px-4 py-4 scroll-mt-16">
             <MakeAWishSection
               nickname={INVITATION_DATA.nickname}
@@ -131,7 +136,7 @@ export default function App() {
               <SmilingStar size={16} color="#F472B6" />
             </div>
             <p className="text-xs font-medium text-slate-600 font-display">
-              Celebrating Agnisnata Maity (Kotha)&apos;s 8th Birthday!
+              Celebrating Agnisnata Maity (Kotha)&apos;s {INVITATION_DATA.turningAge}th Birthday!
             </p>
             <p className="text-[11px] text-slate-400 mt-1 flex items-center justify-center gap-1">
               Made with love <Heart className="w-3 h-3 fill-pink-400 text-pink-400" /> for our little angel

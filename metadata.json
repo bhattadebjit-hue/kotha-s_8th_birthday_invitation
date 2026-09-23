@@ -1,6 +1,6 @@
 {
   "name": "Kotha's 8th Birthday Invitation",
-  "description": "Interactive, mobile-first birthday invitation celebrating Agnisnata Maity (Kotha) turning 8 on Sunday, 4th October with music, countdown, and celebration details.",
+  "description": "Interactive, mobile-first birthday invitation celebrating Agnisnata Maity (Kotha) turning 7 on Sunday, 4th October with music, countdown, and celebration details.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

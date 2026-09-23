@@ -104,7 +104,7 @@ export const INVITATION_DATA: InvitationConfig = {
   // 1. CHILD'S NAME & NICKNAME
   childName: 'Agnisnata Maity',
   nickname: 'Kotha',
-  turningAge: 8,
+  turningAge: 7,
 
   // 2. BIRTHDAY DATE & COUNTDOWN TARGET
   birthdayDateDisplay: '4th October, Sunday',
@@ -130,9 +130,9 @@ export const INVITATION_DATA: InvitationConfig = {
   ],
 
   // INVITATION MESSAGE
-  invitationHeadline: "Come join us as we celebrate our little Kotha turning 8!",
+  invitationHeadline: "Come join us as we celebrate our little Kotha turning 7!",
   invitationSubheadline: "We are so excited to celebrate this joyous milestone!",
-  invitationMessagePart1: "Come join us as we celebrate our little Kotha turning 8!",
+  invitationMessagePart1: "Come join us as we celebrate our little Kotha turning 7!",
   invitationMessagePart2: "We would love to celebrate this special day with you, filled with laughter, fun, cake and lots of happy memories.",
 
   // 7. PHOTO GALLERY / MEMORIES
@@ -159,8 +159,8 @@ export const INVITATION_DATA: InvitationConfig = {
     {
       id: 'photo-4',
       url: IMAGE_4_URL,
-      caption: 'Ready for the Big 8th Birthday!',
-      ageTag: 'Year 8',
+      caption: 'Ready for the Big 7th Birthday!',
+      ageTag: 'Year 7',
     },
   ],
 
@@ -175,42 +175,42 @@ export const INVITATION_DATA: InvitationConfig = {
       label: 'Photo 1',
       url: IMAGE_1_URL,
       alt: 'Baby Kotha in traditional floral garland and floral headdress smiling',
-      caption: 'Baby Kotha (Year 1) 🌸',
+      caption: 'Baby Kotha (Year 1)',
     },
     {
       id: 'slideshow-img-2',
       label: 'Photo 2',
       url: IMAGE_2_URL,
       alt: 'Kotha in yellow and red traditional attire peeking through greenery',
-      caption: 'Little Explorer 🌿',
+      caption: 'Little Explorer',
     },
     {
       id: 'slideshow-img-3',
       label: 'Photo 3',
       url: IMAGE_3_URL,
       alt: 'Kotha smiling gracefully in her beautiful red formal princess dress',
-      caption: 'Little Princess in Red 👑',
+      caption: 'Little Princess in Red',
     },
     {
       id: 'slideshow-img-4',
       label: 'Photo 4',
       url: IMAGE_4_URL,
       alt: 'Kotha in sweet pink dress with bow making a peace sign',
-      caption: 'Peace & Big Smiles ✌️',
+      caption: 'Peace & Big Smiles',
     },
     {
       id: 'slideshow-img-5',
       label: 'Photo 5',
       url: IMAGE_5_URL,
       alt: 'Kotha sitting gracefully on the lawn in traditional festive outfit',
-      caption: 'Festive Twirls & Grace 🌼',
+      caption: 'Festive Twirls & Grace',
     },
     {
       id: 'slideshow-img-6',
       label: 'Photo 6',
       url: IMAGE_6_URL,
       alt: 'Kotha dancing and twirling in her festive outfit under celebration lights',
-      caption: 'Celebrating 8 Wonderful Years! 🎉',
+      caption: 'Celebrating 7 Wonderful Years!',
     },
   ],
 

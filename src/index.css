@@ -82,6 +82,87 @@
   animation: pulseGlow 2.5s ease-in-out infinite;
 }
 
+/* ============================================================================
+   FLYING BALLOONS ANIMATION FOR FRONT COVER
+   ============================================================================ */
+@keyframes balloonRise1 {
+  0% {
+    transform: translateY(115vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.85;
+  }
+  25% {
+    transform: translateY(85vh) translateX(12px) rotate(4deg);
+  }
+  50% {
+    transform: translateY(55vh) translateX(-14px) rotate(-4deg);
+  }
+  75% {
+    transform: translateY(25vh) translateX(10px) rotate(3deg);
+  }
+  92% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(-25vh) translateX(-8px) rotate(-2deg);
+    opacity: 0;
+  }
+}
+
+@keyframes balloonRise2 {
+  0% {
+    transform: translateY(115vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.85;
+  }
+  30% {
+    transform: translateY(80vh) translateX(-16px) rotate(-5deg);
+  }
+  55% {
+    transform: translateY(50vh) translateX(14px) rotate(4deg);
+  }
+  80% {
+    transform: translateY(20vh) translateX(-10px) rotate(-3deg);
+  }
+  92% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(-25vh) translateX(8px) rotate(3deg);
+    opacity: 0;
+  }
+}
+
+@keyframes balloonRise3 {
+  0% {
+    transform: translateY(115vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  8% {
+    opacity: 0.85;
+  }
+  20% {
+    transform: translateY(90vh) translateX(10px) rotate(3deg);
+  }
+  45% {
+    transform: translateY(60vh) translateX(-8px) rotate(-3deg);
+  }
+  70% {
+    transform: translateY(30vh) translateX(14px) rotate(4deg);
+  }
+  92% {
+    opacity: 0.85;
+  }
+  100% {
+    transform: translateY(-25vh) translateX(-12px) rotate(-2deg);
+    opacity: 0;
+  }
+}
+
 /* Custom smooth scrollbar */
 ::-webkit-scrollbar {
   width: 6px;

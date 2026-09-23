@@ -1,8 +1,9 @@
 import React from 'react';
-import { Sparkles, Heart, MailOpen } from 'lucide-react';
+import { Sparkles, Heart, MailOpen, Calendar } from 'lucide-react';
 import { InvitationConfig } from '../invitationConfig.ts';
 import { CuteBunny, CuteTeddyBear, BirthdayCakeGraphic, BalloonsCluster, SmilingStar, FluffyCloud } from './CuteIllustrations.tsx';
 import { CartoonConveyor } from './CartoonConveyor.tsx';
+import { FlyingBalloons } from './FlyingBalloons.tsx';
 import { triggerConfetti } from '../utils/confetti.ts';
 
 interface HeroSectionProps {
@@ -21,6 +22,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ config, onOpenInvitati
       id="hero-section"
       className="relative min-h-[100dvh] flex flex-col items-center justify-between px-3 sm:px-4 py-4 sm:py-6 overflow-x-hidden text-center select-none"
     >
+      {/* Flying Balloons in the Background */}
+      <FlyingBalloons />
+
       {/* Background Animated Clouds & Stars */}
       <div className="absolute -top-4 -left-6 opacity-60 animate-cloud-drift pointer-events-none">
         <FluffyCloud className="w-28 h-16 sm:w-36 sm:h-20" />
@@ -67,8 +71,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ config, onOpenInvitati
 
         {/* Date Display Pill */}
         <div className="mt-2">
-          <span className="inline-block px-3.5 py-1 rounded-2xl bg-gradient-to-r from-amber-100 via-pink-100 to-purple-100 border border-pink-200 text-slate-800 text-xs sm:text-sm font-bold font-display shadow-2xs">
-            🗓️ {config.birthdayDateDisplay}
+          <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-2xl bg-gradient-to-r from-amber-100 via-pink-100 to-purple-100 border border-pink-200 text-slate-800 text-xs sm:text-sm font-bold font-display shadow-2xs">
+            <Calendar className="w-3.5 h-3.5 text-pink-500 shrink-0" />
+            <span>{config.birthdayDateDisplay}</span>
           </span>
         </div>
 
@@ -106,7 +111,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ config, onOpenInvitati
         <CartoonConveyor />
 
         {/* PROMINENT ACTION BUTTON */}
-        <div className="w-full max-w-xs mt-1">
+        <div className="w-full max-w-xs mt-2.5 mb-1">
           <button
             id="open-invitation-btn"
             onClick={handleOpenClick}
@@ -115,19 +120,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ config, onOpenInvitati
             <MailOpen className="w-5 h-5 animate-bounce" />
             <span>Open Invitation</span>
           </button>
-        </div>
-
-        <p className="text-[11px] sm:text-xs text-slate-500 mt-2 font-medium">
-          Tap to view party details, memory gallery, and cute surprises! ✨
-        </p>
-      </div>
-
-      {/* Decorative Bottom Bar */}
-      <div className="pb-1 z-10">
-        <div className="flex items-center justify-center gap-2 text-[11px] font-semibold text-pink-400/90 font-display">
-          <Sparkles className="w-3 h-3 text-pink-400" />
-          <span>Tap &quot;Open Invitation&quot; to see celebration details</span>
-          <Sparkles className="w-3 h-3 text-pink-400" />
         </div>
       </div>
     </section>

@@ -45,7 +45,7 @@ export const MakeAWishSection: React.FC<MakeAWishSectionProps> = ({ nickname, tu
       <p className="text-xs sm:text-sm text-slate-600 max-w-xs mx-auto mt-1 mb-4">
         {candlesLit
           ? `Close your eyes, make a sweet birthday wish for little ${nickname}, and tap to blow out all ${turningAge} candles!`
-          : `Yay! The candles are blown! May your sweet wish for ${nickname} come true! ✨`}
+          : `Yay! The candles are blown! May your sweet wish for ${nickname} come true!`}
       </p>
 
       {/* The Cake Graphic */}
@@ -72,12 +72,12 @@ export const MakeAWishSection: React.FC<MakeAWishSectionProps> = ({ nickname, tu
           {candlesLit ? (
             <>
               <Sparkles className="w-5 h-5 text-yellow-300 animate-spin" />
-              Tap to Blow Out Candles 🎂
+              Tap to Blow Out Candles
             </>
           ) : (
             <>
               <RotateCcw className="w-4 h-4 text-purple-600" />
-              Light Candles Again ✨
+              Light Candles Again
             </>
           )}
         </button>
@@ -92,7 +92,7 @@ export const MakeAWishSection: React.FC<MakeAWishSectionProps> = ({ nickname, tu
               Birthday Blessing for {nickname}
             </div>
             <p className="text-sm font-medium text-slate-700 mt-1 italic">
-              &ldquo;May your {turningAge}th year be filled with fairy-tale magic, sweet giggles, laughter & sunshine! ✨&rdquo;
+              &ldquo;May your {turningAge}th year be filled with fairy-tale magic, sweet giggles, laughter & sunshine!&rdquo;
             </p>
           </div>
         )}
